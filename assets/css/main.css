@@ -1765,6 +1765,17 @@ input, select, textarea {
 				height: 48px;
 			}
 
+		.image.avatar64 {
+				width: 64px;
+				height: 64px;
+				background: #f00;
+		}
+	
+				.image.avatar64 img {
+					width: 64px;
+					height: 64px;
+				}
+
 		.image.fit {
 			display: block;
 			width: 100%;
@@ -1773,8 +1784,21 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
+			height: auto;
 			margin: 0 0 2em 0;
 		}
+
+		.image.profilepic {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 2.5em;
+			margin-top: 0em;
+			width: 35%;
+			height: auto;
+			/* margin: 0 0 2em 0; */
+		}
+
 
 		.image.left {
 			float: left;
@@ -2107,6 +2131,7 @@ input, select, textarea {
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
+			margin-left: 0em;  /* temp fix to stop overlapping with image*/
 		}
 
 		#logo p {
@@ -2115,13 +2140,14 @@ input, select, textarea {
 			font-size: 0.6em;
 			color: rgba(255, 255, 255, 0.5);
 			line-height: 1.25em;
-			margin: 0.5em 0 0 0;
+			margin: 0.5em 0 0 0em;
 		}
 
 		#logo .image {
 			position: absolute;
 			left: 0;
 			top: 0;
+
 		}
 
 	#nav ul {
@@ -2241,7 +2267,9 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				/* padding: 10em 0; */
+				padding-top: 5em;
+				padding-bottom: 5em;
 				background-size: cover;
 				background-position: center center;
 			}
