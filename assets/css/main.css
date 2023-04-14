@@ -126,16 +126,20 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2em;
+		font-size: 2.5em;
 		letter-spacing: -1px;
 	}
 
 		h2.alt {
-			color: #888;
+			color: #888; /* #888 original */
+			-webkit-text-stroke-width: .01em;
+			-webkit-text-stroke-color: rgba(0, 0, 0, 1);
+			/* background-color: rgba(0, 0, 0, .25);  */
+			/* display: inline; */
 		}
 
 			h2.alt strong {
-				color: #666;
+				color: #666; /*#666 original*/
 			}
 
 	h3 {
@@ -2276,7 +2280,9 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/banner3_blur.png"); /* banner.png original*/
+				/* filter: blur(5px); */
+				/* -webkit-filter: blur(5px) */
 			}
 
 			#main > section.two {
